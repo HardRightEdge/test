@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+    <META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <title>Search For Prices </title>
+
+    <!-- Bootstrap min.css -->
+    <link href="_bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->  
+    
+    <!-- Overwrite.css Must go last -->
+    <link href="_bootstrap/css/overwrite.css" rel="stylesheet">
+
+  </head>
+  
+  <body>
+
+    <header>
+      <!-- Add Hidden h2 tag for HTML5 Outliner --> 
+      <h1 class="text-center">Prices</h1>  
+    </header>
+
+      <!-- added navbar-centered in media queries -->
+    <nav class="navbar navbar-inverse navbar-centered" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+        </div><!-- navbar header -->
+
+      <!-- Nav Links and dropdown toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+      				<li><a href="index.html">Return to Homepage</a></li>
+    			</ul> <!-- navbar nav -->
+    		</div> <!-- end collapse navbar -->
+    	</nav> <!-- navbar inverse -->
+    	
+<!-- END NAV BEGIN CONTAINER -->
+    		
+	<div class="container">
+	
+		<div class="row">
+			<section class="col-md-12">
+          <div>
+            <h4>Search by Painting Name (Don't use "The" or apostrophes):</h4>
+            <input type="text" id="paintName" />
+              <input type="button" value="Search" onclick="findPainting();">
+
+            <div id="output1">
+              <p></p>
+            </div>
+            
+          </div>
+			</section><!-- end col lg -->
+		</div> <!-- end Row 1 -->
+		
+		
+	</div> <!-- container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="_bootstrap/js/bootstrap.min.js"></script>
+    <script src="prices3.js"></script>
+   
+    
+  </body>
+</html>
+
